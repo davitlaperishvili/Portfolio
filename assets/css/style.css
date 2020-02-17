@@ -27,11 +27,7 @@ body {
   -ms-flex-pack: center;
   justify-content: center;
   margin: 0 auto;
-  background-color: #313a3d;
-  background-attachment: fixed, fixed;
-  background-image: url(../../images/pic03.jpg), url(../../images/bg.jpg);
-  background-position: top left, center center;
-  background-size: auto, cover; }
+  background-color: #313a3d; }
 
 h2 {
   font-size: 1.75em;
@@ -75,6 +71,21 @@ header {
     margin: 30px 0;
     background-color: white;
     border: none; }
+
+.bg_images {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  height: 100%;
+  z-index: -2; }
+
+.img1, .img2, .img3, .img4, .img5, .img6, .img7 {
+  width: 100%;
+  height: 100%; }
+  .img1 img, .img2 img, .img3 img, .img4 img, .img5 img, .img6 img, .img7 img {
+    width: 100%;
+    height: 100vh; }
 
 .begin {
   padding: 16px 65px;
@@ -155,9 +166,14 @@ li {
 
 .scrollDown {
   margin: 110px 0 0 0; }
+  .scrollDown .scroll {
+    font-size: 50px;
+    background-color: rgba(144, 144, 144, 0.15);
+    padding: 10px;
+    border-radius: 50%; }
 
-.material-icons + .scroll {
-  font-size: 60px; }
+.scroll:hover {
+  background-color: rgba(144, 144, 144, 0.3); }
 
 .stuffIDo p {
   margin-bottom: 50px; }
