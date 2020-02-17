@@ -34,14 +34,14 @@ body{
     
 }
 h2{
-    font-size: 2.7vw;
+    font-size: 25px;
     line-height: 1.5em;
     margin-top: 40px;
     font-family: caps;
 }
 
 p{
-    font-size: 1.7vw;
+    font-size: 18px;
     margin-bottom: 32px;
     
 }
@@ -56,7 +56,7 @@ header{
     top: 5px;
     z-index: -1;
     h1{
-        font-size: 4.6vw;
+        font-size: 50px;
         line-height: 1.25em;
         color: white;
         font-family: caps;
@@ -253,7 +253,11 @@ footer{
 .copyright:hover{
     color: white;
 }
-
+.head_p, .footer_p{
+    
+    color: rgb(20, 19, 19);
+    font-weight: 600;
+}
 @media (max-width: 560px){
     
     body{
@@ -280,11 +284,7 @@ footer{
         font-size: 5vw;
     }
     
-    .head_p, .footer_p{
-        font-size: 3vw;
-        color: rgb(20, 19, 19);
-        font-weight: 600;
-    }
+    
     .send{
         font-size: 12px;
         padding: 5px;
@@ -306,17 +306,52 @@ footer{
         width: 90%;
         input{
             width: 100%;
+            margin-bottom: 20px;
         }
         textarea{
             width: 100%;
         }
         }
     }
+    .head_p, .footer_p{
+        font-size: 3vw;
+        text-align: center;
+    }
 }
-
+@media (min-width: 1300px){
+    header{
+        height: calc(100vh - 170px);
+    }
+    header h1{
+        font-size: 70px;
+    }
+    body{
+        width: 50%;
+    }
+    h2{
+        font-size: 35px;
+    }
+    p{
+        font-size: 25px;
+    }
+    .icons_container i{
+        font-size: 70px;
+    }
+    .begin {
+        padding: 22px 80px;
+        font-size: 26px;
+        margin: 50px 0;
+    }
+}
 @media (min-width: 1920px){
+    body{
+        width: 50%;
+    }
     header{
         height: calc(100vh - 200px);
+        h1{
+            font-size: 90px;
+        }
     }
     
     h2{
@@ -332,11 +367,7 @@ footer{
         width: 170px;
         height: 4px;
     }
-    .begin {
-        padding: 22px 80px;
-        font-size: 26px;
-        margin: 50px 0;
-    }
+    
     .scrollDown .scroll {
         font-size: 85px;
     }
