@@ -20,14 +20,14 @@ $fColor: #61686b;
     box-sizing: border-box;
 }
 body{
-    width: 53%;
+    width: 560px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
     background-color: #313a3d;
     background-attachment: fixed, fixed;
-    background-image:url(../../images/pic03.jpg), url(../../images/bg.jpg);
+    background-image:url(../../images/bg2.jpg);
     background-position: top left, center center;
     
     background-size: 100vw, 100vh;
@@ -43,6 +43,7 @@ h2{
 p{
     font-size: 1.7vw;
     margin-bottom: 32px;
+    
 }
 
 header{
@@ -90,14 +91,16 @@ header{
     align-items: center;
     background-color: white;
     margin-bottom: 130px;
+    padding: 0 40px;
+    width: 100%;
 }
 .content_block{
-    padding: 80px 40px 70px;
+    padding: 80px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    width: 100%;
 }
 .content{
     display: flex;
@@ -105,12 +108,14 @@ header{
     justify-content: center;
     align-items: center;
     padding: 120px 0 100px 0;
+   
 }
 
 
 li{
     border-bottom: 1px solid #ddd;
     text-align: center;
+    width: 100%;
 }
 
 .hr{
@@ -192,7 +197,7 @@ form{
     
 }
 input{
-    width: 200px;
+    width: 48%;
     background-color: rgba(144, 144, 144, 0.15);
     margin-bottom: 40px;
     border: none;
@@ -242,6 +247,9 @@ footer{
     width: 30px;
     fill: rgb(241, 236, 236);
 }
+.copyright{
+    color: rgb(20, 19, 19);
+}
 .copyright:hover{
     color: white;
 }
@@ -249,7 +257,60 @@ footer{
 @media (max-width: 560px){
     
     body{
-        width: 85%;
+        width: 100%;
+        
+    }
+    .main_content{
+        padding: 0;
+    }
+    ul{
+        width: 95%;
+    }
+    li{
+        border-bottom: none;
+        width: 100%;
+    }
+    header h1{
+        font-size: 9vw;
+    }
+    h2{
+        font-size: 7vw
+    }
+    p{
+        font-size: 5vw;
+    }
+    
+    .head_p, .footer_p{
+        font-size: 3vw;
+        color: rgb(20, 19, 19);
+        font-weight: 600;
+    }
+    .send{
+        font-size: 12px;
+        padding: 5px;
+        width: 130px;
+    }
+    .icons_container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        .icons{
+            border: none;
+            border-bottom: 2px solid #ddd
+        }
+    }
+    .getInTouch{
+        form{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        input{
+            width: 100%;
+        }
+        textarea{
+            width: 100%;
+        }
+        }
     }
 }
 
