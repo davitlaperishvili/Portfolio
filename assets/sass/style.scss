@@ -83,7 +83,9 @@ header{
     
     text-align: center;
 }
-
+.begin:hover, .send:hover{
+    background-color: #3bbb6e;
+}
 .main_content{
     display: flex;
     flex-direction: column;
@@ -95,7 +97,7 @@ header{
     width: 100%;
 }
 .content_block{
-    padding: 80px 0;
+    padding: 50px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -107,7 +109,7 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 120px 0 100px 0;
+    padding: 50px 0 50px 0;
    
 }
 
@@ -172,6 +174,7 @@ li{
     width: 220px;
     height: 200px;
     padding: 40px 0;
+    
     position: relative;
     perspective: 1000px;
     p{
@@ -280,9 +283,13 @@ footer{
     width: 30px;
     fill: rgb(241, 236, 236);
 }
+.social-svg:hover{
+    fill: rgb(130, 226, 66);
+}
 .copyright{
     color: rgb(20, 19, 19);
 }
+
 .copyright:hover{
     color: white;
 }

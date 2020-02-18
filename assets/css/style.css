@@ -89,6 +89,9 @@ header {
   font-size: 16px;
   text-align: center; }
 
+.begin:hover, .send:hover {
+  background-color: #3bbb6e; }
+
 .main_content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -109,7 +112,7 @@ header {
   width: 100%; }
 
 .content_block {
-  padding: 80px 0;
+  padding: 50px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -139,7 +142,7 @@ header {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 120px 0 100px 0; }
+  padding: 50px 0 50px 0; }
 
 li {
   border-bottom: 1px solid #ddd;
@@ -336,6 +339,9 @@ footer {
 .social-svg {
   width: 30px;
   fill: #f1ecec; }
+
+.social-svg:hover {
+  fill: #82e242; }
 
 .copyright {
   color: #141313; }
