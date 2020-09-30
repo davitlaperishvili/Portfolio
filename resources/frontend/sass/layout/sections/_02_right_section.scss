@@ -1,6 +1,7 @@
 section.right_section{
-    margin: auto 0;
+    padding-top: 200px;
     div.content{
+        display: none;
         div.works_listing{
             ul{
                 @extend .no-list;
@@ -99,6 +100,9 @@ section.right_section{
                     }
                 }
             }
+        }
+        &.active{
+            display: block;
         }
     }
 }
