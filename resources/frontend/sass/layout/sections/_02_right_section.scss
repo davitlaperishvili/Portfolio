@@ -1,0 +1,104 @@
+section.right_section{
+    margin: auto 0;
+    div.content{
+        div.works_listing{
+            ul{
+                @extend .no-list;
+                display: grid;
+                grid-gap: 50px;
+                grid-template-columns: repeat(3, 325px);
+                li{
+                    figure{
+                        margin-bottom: 15px;
+                        border-radius: 20px;
+                        overflow: hidden;
+                        a{
+                            img{
+
+                            }
+                        }
+                        div.hover_block{
+                            @extend .overlay;
+                            visibility: hidden;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            z-index: 99;
+                            a{
+                                @extend .flex;
+                                display: none;
+                                padding: 10px 20px;
+                                color: $cpdf;
+                                font-size: 18px;
+                                font-weight: 700;
+                                border: 1px solid $cpdf;
+                                border-radius: 10px;
+                                &:hover{
+                                    background-color: $cpdf;
+                                    color: $cwhite;
+                                }
+                            }
+                        }
+                        &:hover{
+                            div.hover_block{
+                                visibility: visible;
+                                background-color: rgba($cblack, 0.7);
+                                a{
+                                    display: flex;
+                                }
+                            }
+                        }
+                    }
+                    div.work_details{
+                        h3.work_title{
+                            margin-bottom: 10px;
+                            a{
+                                color: $textColor;
+                                font-size: 20px;
+                                font-weight: 700;
+                            }
+                            &:hover{
+                                a{
+                                    color: $cpurple;
+                                }
+                            }
+                        }
+                        div.work_desc{
+                            margin-bottom: 30px;
+                            color: $textColor;
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 1.8;
+                        }
+                        div.visite_site{
+                            text-align: end;
+                            a{
+                                display: inline-block;
+                                padding-bottom: 5px;
+                                color: $cpurple;
+                                font-size: 16px;
+                                font-weight: 400;
+                                overflow: hidden;
+                                &:after{
+                                    content: '';
+                                    position: absolute;
+                                    display: block;
+                                    background-color: $cpurple;
+                                    width: 40%;
+                                    height: 2px;
+                                    bottom: 0;
+                                    left: -100%;
+                                }
+                                &:hover{
+                                    &:after{
+                                        left: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
