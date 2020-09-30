@@ -1,6 +1,20 @@
 section.right_section{
-    padding-top: 200px;
-    margin-bottom: 50px;
+    padding: 70px 0;
+    @media(max-width: 1680px){
+        padding: 60px 0;
+    }
+    @media(max-width: 1440px){
+        padding: 55px 0;
+    }
+    @media(max-width: 1366px){
+        padding: 50px 0;
+    }
+    @media(max-width: 1280px){
+        padding: 45px 0;
+    }
+    @media(max-width: 1024px){
+        padding: 0 0 30px 0;
+    }
     div.content{
         display: none;
         div.works_listing{
@@ -9,6 +23,28 @@ section.right_section{
                 display: grid;
                 grid-gap: 50px;
                 grid-template-columns: repeat(3, 1fr);
+                @media(max-width: 1680px){
+                    grid-gap: 40px;
+                }
+                @media(max-width: 1440px){
+                    grid-gap: 30px;
+                }
+                @media(max-width: 1366px){
+                    grid-gap: 50px;
+                    grid-template-columns: repeat(2, 1fr);
+                }
+                @media(max-width: 1280px){
+                    //grid-gap: 15px;
+                }
+                @media(max-width: 1024px){
+                    grid-template-columns: repeat(2, 1fr);
+                }
+                @media(max-width: 768px){
+                    grid-template-columns: repeat(1, 1fr);
+                }
+                @media(max-width: 420px){
+                    grid-template-columns: repeat(1, 1fr);
+                }
                 li{
                     figure{
                         margin-bottom: 15px;

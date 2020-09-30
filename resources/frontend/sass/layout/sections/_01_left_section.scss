@@ -3,15 +3,63 @@ section.left_section{
     height: 100%;
     padding: 70px 60px;
     background-color: rgba($cwhite, 0.03);
+    @media(max-width: 1680px){
+        padding: 60px 55px;
+    }
+    @media(max-width: 1440px){
+        padding: 55px 50px;
+    }
+    @media(max-width: 1366px){
+        padding: 50px 40px;
+    }
+    @media(max-width: 1280px){
+        padding: 45px 30px;
+    }
+    @media(max-width: 1024px){
+        min-height: 0;
+        padding: 20px 0;
+        background-color: transparent;
+    }
+    @media(max-width: 768px){}
+    @media(max-width: 420px){}
     header.left_section_header{
         padding-bottom: 75px;
         border-bottom: 2px solid $mfc;
+        @media(max-width: 1680px){
+            padding-bottom: 70px;
+        }
+        @media(max-width: 1440px){
+            padding-bottom: 60px;
+        }
+        @media(max-width: 1366px){
+            padding-bottom: 50px;
+        }
+        @media(max-width: 1280px){
+            padding-bottom: 40px;
+        }
+        @media(max-width: 1024px){
+            display: flex;
+            align-items: center;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+        @media(max-width: 768px){}
+        @media(max-width: 420px){}
         figure{
             width: 80px;
             height: 80px;
             margin-bottom: 15px;
             border-radius: 20px;
             overflow: hidden;
+            @media(max-width: 1024px){
+                margin-right: 20px;
+                margin-bottom: 0;
+            }
+            @media(max-width: 420px){
+                width: 50px;
+                height: 50px;
+                margin-right: 10px;
+            }
             img{
                 width: 100%;
                 height: 100%;
@@ -26,6 +74,25 @@ section.left_section{
                     color: $cwhite;
                     font-size: 28px;
                     font-weight: 700;
+                    @media(max-width: 1680px){
+                        font-size: 26px;
+                    }
+                    @media(max-width: 1440px){}
+                    @media(max-width: 1366px){
+                        font-size: 24px;
+                    }
+                    @media(max-width: 1280px){
+                        font-size: 22px;
+                    }
+                    @media(max-width: 1024px){
+                        font-size: 20px;
+                    }
+                    @media(max-width: 768px){
+                        font-size: 18px;
+                    }
+                    @media(max-width: 420px){
+                        font-size: 16px;
+                    }
                     &:hover{
                         color: $cpurple;
                     }
@@ -36,6 +103,19 @@ section.left_section{
                     color: $mfc;
                     font-size: 18px;
                     font-weight: 400;
+                    @media(max-width: 1680px){}
+                    @media(max-width: 1440px){
+                        font-size: 16px;
+                    }
+                    @media(max-width: 1366px){}
+                    @media(max-width: 1280px){}
+                    @media(max-width: 1024px){
+                        font-size: 14px;
+                    }
+                    @media(max-width: 768px){}
+                    @media(max-width: 420px){
+                        font-size: 12px;
+                    }
                     &:hover{
                         color: $cpurple;
                     }
@@ -45,12 +125,42 @@ section.left_section{
     }
     div.left_section_navigation{
         padding-top: 75px;
+        @media(max-width: 1680px){
+            padding-top: 70px;
+        }
+        @media(max-width: 1440px){
+            padding-top: 60px;
+        }
+        @media(max-width: 1366px){
+            padding-top: 50px;
+        }
+        @media(max-width: 1280px){
+            padding-top: 40px;
+        }
+        @media(max-width: 1024px){
+            padding-top: 0;
+        }
         nav.navigation{
             ul{
                 @extend .no-list;
                 flex-direction: column;
                 li{
                     margin-bottom: 40px;
+                    @media(max-width: 1680px){
+                        margin-bottom: 30px;
+                    }
+                    @media(max-width: 1440px){
+                        margin-bottom: 25px;
+                    }
+                    @media(max-width: 1366px){
+                        margin-bottom: 20px;
+                    }
+                    @media(max-width: 1280px){
+                        margin-bottom: 15px;
+                    }
+                    @media(max-width: 1024px){}
+                    @media(max-width: 768px){}
+                    @media(max-width: 420px){}
                     &:last-child{
                         margin-bottom: 0;
                     }

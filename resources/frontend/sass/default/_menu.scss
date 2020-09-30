@@ -93,18 +93,21 @@ div.resp_menu{
 	position: absolute;
 	width: 35px;
 	height: 35px;
-	top: 20px;
+	top: 40px;
 	right: 15px;
-	z-index: 1000;
+	z-index: 99999;
 	@media(max-width: 992px){
 		display: block;
+	}
+	@media(max-width: 420px){
+		top: 25px;
 	}
 	div.resp_menu_toggle{
 		@extend .trans-all-4;
 		position: absolute;
 		width: 35px;
 		height: 35px;
-		background-color: $ccorp;
+		background-color: $cwhite;
 		border-radius: $bdrm;
 		cursor: pointer;
 		div{
@@ -113,7 +116,7 @@ div.resp_menu{
 			height: 1px;
 			top: 50%;
 			right: 10px;
-			background-color: $cwhite;
+			background-color: $cdark;
 			&:first-child{
 				margin-top: -6px;
 			}
@@ -144,14 +147,15 @@ div.resp_menu{
 		top: 35px;
 		right: 0;
 		padding: 10px 15px;
-		background-color: $ccorp;
+		background-color: $cwhite;
 		border-radius: $bdrm $bdrn $bdrm $bdrm;
+		z-index: 999;
 		> ul{
 			@extend .no-list;
 			> li{
 				position: relative;
 				padding: 10px 5px;
-				border-bottom: 1px solid rgba($cwhite, 0.1);
+				border-bottom: 1px solid rgba($cdark, 0.3);
 				&:last-child{
 					border-bottom: none;
 				}
@@ -160,7 +164,7 @@ div.resp_menu{
 				}
 				> a{
 					display: block;
-					color: $cwhite;
+					color: $cdark;
 				}
 				div.plus_minus{
 					@extend .trans-all-4;
