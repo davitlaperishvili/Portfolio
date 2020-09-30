@@ -13,3 +13,7 @@ yarn-error.log
 .DS_Store
 Thumbs.db
 node_modules/
+gulpfile.babel.js
+webpack.config.babel.js
+package-lock.json
+package.json
