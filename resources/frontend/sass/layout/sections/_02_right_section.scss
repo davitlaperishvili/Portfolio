@@ -1,5 +1,6 @@
 section.right_section{
     padding-top: 200px;
+    margin-bottom: 50px;
     div.content{
         display: none;
         div.works_listing{
@@ -7,7 +8,7 @@ section.right_section{
                 @extend .no-list;
                 display: grid;
                 grid-gap: 50px;
-                grid-template-columns: repeat(3, 325px);
+                grid-template-columns: repeat(3, 1fr);
                 li{
                     figure{
                         margin-bottom: 15px;
@@ -29,14 +30,14 @@ section.right_section{
                                 @extend .flex;
                                 display: none;
                                 padding: 10px 20px;
-                                color: $cpdf;
+                                color: $cwhite;
                                 font-size: 18px;
                                 font-weight: 700;
-                                border: 1px solid $cpdf;
+                                border: 1px solid $cwhite;
                                 border-radius: 10px;
                                 &:hover{
                                     background-color: $cpdf;
-                                    color: $cwhite;
+                                    border: 1px solid $cpdf;
                                 }
                             }
                         }
@@ -72,7 +73,6 @@ section.right_section{
                             line-height: 1.8;
                         }
                         div.visite_site{
-                            text-align: end;
                             a{
                                 display: inline-block;
                                 padding-bottom: 5px;
