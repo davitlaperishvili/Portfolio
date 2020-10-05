@@ -155,8 +155,11 @@ section.left_section{
                     }
                     a{
                         color: $mfc;
-                        font-size: 40px;
+                        font-size: 20px;
                         font-weight: 700;
+                        @media(max-width: 1024px){
+                            
+                        }
                         &:hover{
                             color: $cwhite;
                         }
