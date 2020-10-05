@@ -42,18 +42,15 @@ $(document).ready(function(){
 			resp_sub_menu.slideUp(400);
 		}
 	});
-	$(window).on('click', function(e){
-		const targetElem = $("div.resp_menu > div.resp_menu_toggle");
-		let resp_menu = $(this).next("div.resp_menu_ul");
-		if( e.target != targetElem){
+	// close menu on outside click
+	$(document).click(function(event) {
+		let resp_menu = $("div.resp_menu_ul");
+		let targetElem = $("div.resp_menu > div.resp_menu_toggle");
+		//if you click on anything except the modal itself or the "open modal" link, close the modal
+		if (!$(event.target).closest("div.resp_menu").length) {
 			targetElem.removeClass("resp_menu_toggled");
 			resp_menu.fadeOut(500);
-			console.log('done');
-		}else{
-			console.log('error');
 		}
-	})
-	$(window).on('click', function(e){
-		console.log(e.target)
-	})
+	});
+	
 });

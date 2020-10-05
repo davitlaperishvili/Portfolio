@@ -1,6 +1,6 @@
 // მთავარი მენიუ
 nav.navigation{
-	@media(max-width: 992px){
+	@media(max-width: 1024px){
 		display: none;
 	}
 	> ul{
@@ -96,7 +96,7 @@ div.resp_menu{
 	top: 40px;
 	right: 15px;
 	z-index: 99999;
-	@media(max-width: 992px){
+	@media(max-width: 1024px){
 		display: block;
 	}
 	@media(max-width: 420px){
@@ -226,6 +226,12 @@ div.resp_menu{
 								top: 10px;
 							}
 						}
+					}
+				}
+				&:hover,
+				&.active{
+					a{
+						color: $cpurple;
 					}
 				}
 			}

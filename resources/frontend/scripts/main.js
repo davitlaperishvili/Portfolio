@@ -14,11 +14,15 @@ $(document).ready(function(){
 			const dataValue = $(this).attr('data-num');
 			const title = $(this).text();
 			//add active class to Menu Item
-			$('nav.navigation ul li').each( function(){
+			$('nav.navigation ul li, div.resp_menu_ul ul li').each( function(){
 				$(this).removeClass('active');
 			})
 			$(this).parent().addClass('active');
-
+			//close menu on choose 
+			let targetElem = $("div.resp_menu > div.resp_menu_toggle");
+			let resp_menu = $("div.resp_menu_ul");
+			targetElem.removeClass("resp_menu_toggled");
+			resp_menu.fadeOut(500);
 			// remove all active content
 			$('div.content').each( function(){
 				$(this).removeClass('active');
@@ -32,6 +36,22 @@ $(document).ready(function(){
 			$('h2.right_section_title').text(title)
 		});
 	});
-	console.log($('nav.navigation ul li a'))
+	// window.addEventListener('click', function(e){
+	// 	//e.stopPropagation()
+	// 	let target = e.target;
+	// 	let targetElem = document.querySelector("div.resp_menu_toggle");
+	// 	let targetElemIn = document.querySelector("div.resp_menu_toggle div");
+	// 	let resp_menu = document.querySelector("div.resp_menu_ul");
+	// 	console.log(target)
+	// 	if( target == targetElem && target == targetElemIn){
+	// 		console.log('error');
+			
+	// 	}else{
+			
+	// 		targetElem.classList.remove("resp_menu_toggled");
+	// 		resp_menu.style.display = "none";
+	// 		console.log('done');
+	// 	}
+	// })
 
 });
