@@ -36,22 +36,19 @@ $(document).ready(function(){
 			$('h2.right_section_title').text(title)
 		});
 	});
-	// window.addEventListener('click', function(e){
-	// 	//e.stopPropagation()
-	// 	let target = e.target;
-	// 	let targetElem = document.querySelector("div.resp_menu_toggle");
-	// 	let targetElemIn = document.querySelector("div.resp_menu_toggle div");
-	// 	let resp_menu = document.querySelector("div.resp_menu_ul");
-	// 	console.log(target)
-	// 	if( target == targetElem && target == targetElemIn){
-	// 		console.log('error');
-			
-	// 	}else{
-			
-	// 		targetElem.classList.remove("resp_menu_toggled");
-	// 		resp_menu.style.display = "none";
-	// 		console.log('done');
-	// 	}
-	// })
+	// Gallery
+	$(".magnific").each(function(){
+		$(this).magnificPopup({
+			delegate: "a",
+			type: "image",
+			gallery:{
+				enabled: true
+			},
+			zoom:{
+				enabled: true,
+				duration: 300
+			}
+		});
+	});
 
 });
