@@ -20,8 +20,6 @@ section.left_section{
         padding: 20px 0;
         background-color: transparent;
     }
-    @media(max-width: 768px){}
-    @media(max-width: 420px){}
     header.left_section_header{
         padding-bottom: 75px;
         border-bottom: 2px solid $mfc;
@@ -43,8 +41,6 @@ section.left_section{
             padding-bottom: 0;
             border-bottom: none;
         }
-        @media(max-width: 768px){}
-        @media(max-width: 420px){}
         figure{
             width: 80px;
             height: 80px;
@@ -77,7 +73,6 @@ section.left_section{
                     @media(max-width: 1680px){
                         font-size: 26px;
                     }
-                    @media(max-width: 1440px){}
                     @media(max-width: 1366px){
                         font-size: 24px;
                     }
@@ -103,16 +98,12 @@ section.left_section{
                     color: $mfc;
                     font-size: 18px;
                     font-weight: 400;
-                    @media(max-width: 1680px){}
                     @media(max-width: 1440px){
                         font-size: 16px;
                     }
-                    @media(max-width: 1366px){}
-                    @media(max-width: 1280px){}
                     @media(max-width: 1024px){
                         font-size: 14px;
                     }
-                    @media(max-width: 768px){}
                     @media(max-width: 420px){
                         font-size: 12px;
                     }
@@ -158,9 +149,6 @@ section.left_section{
                     @media(max-width: 1280px){
                         margin-bottom: 15px;
                     }
-                    @media(max-width: 1024px){}
-                    @media(max-width: 768px){}
-                    @media(max-width: 420px){}
                     &:last-child{
                         margin-bottom: 0;
                     }
