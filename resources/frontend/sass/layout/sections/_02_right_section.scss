@@ -220,6 +220,12 @@ section.right_section{
             div.contact_info{
                 div.info_listing{
                     margin-bottom: 40px;
+                    @media(max-width: 1366px){
+                        margin-bottom: 30px;
+                    }
+                    @media(max-width: 768px){
+                        margin-bottom: 20px;
+                    }
                     div.info_item{
                         margin-bottom: 10px;
                         &:last-child{
@@ -229,6 +235,9 @@ section.right_section{
                         a{
                             font-size: 18px;
                             color: $ccorp;
+                            @media(max-width: 768px){
+                                font-size: 16px;
+                            }
                         }
                         a{
                             color: $textColor;
@@ -245,6 +254,15 @@ section.right_section{
                                 font-size: 30px;
                                 color: $textColor;
                                 transition: 0.2s;
+                                @media(max-width: 1680px){
+                                    font-size: 26px;
+                                }
+                                @media(max-width: 1024px){
+                                    font-size: 24px;
+                                }
+                                @media(max-width: 768px){
+                                    font-size: 22px;
+                                }
                                 &:hover{
                                     color: $ccorp;
                                     transition: 0.2s;
