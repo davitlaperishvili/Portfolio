@@ -1,0 +1,42 @@
+{
+  "menu": [
+    {
+      "img": "img/tabs/vegy.jpg",
+      "altimg": "vegy",
+      "title": "Fitness menu",
+      "descr": "Fitness menu' - is a new approach to cooking: more fresh vegetables and fruits. A product of active and healthy people. This is a completely new product with an optimal price and high quality!",
+      "price": 9
+    },
+    {
+      "img": "img/tabs/post.jpg",
+      "altimg": "post",
+      "title": "Lenten menu",
+      "descr": "Lenten menu - this is a careful selection of ingredients: a complete absence of animal products, milk from almonds, oats, coconut or buckwheat, the correct amount of protein due to tofu and imported vegetarian steaks.",
+      "price": 14
+    },
+    {
+      "img": "img/tabs/elite.jpg",
+      "altimg": "elite",
+      "title": "Premium menu'",
+      "descr": "In the 'Premium' menu, we use not only beautiful packaging design, but also high-quality dishes. Red fish, seafood, fruits - restaurant menu without going to the restaurant!",
+      "price": 21
+    }
+  ],
+  "requests": [
+    {
+      "name": "sdv",
+      "phone": "+995 558 21 05 33",
+      "id": 1
+    },
+    {
+      "name": "კატეგორია1",
+      "phone": "+995 558 21 05 33",
+      "id": 2
+    },
+    {
+      "name": "afv",
+      "phone": "+995 558 21 05 33",
+      "id": 3
+    }
+  ]
+}
