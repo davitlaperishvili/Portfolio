@@ -27,7 +27,7 @@
 		"gulp-sass": "^4.1.0",
 		"gulp-sourcemaps": "^2.6.5",
 		"gulp-util": "^3.0.8",
-		"node-notifier": "^8.0.0",
+		"node-notifier": "^8.0.1",
 		"webpack": "^4.44.2"
 	},
 	"dependencies": {
