@@ -1,5 +1,5 @@
 // Tags
-body{
+body {
 	color: rgba($cwhite, 0.5);
 	font-size: 14px;
 	font-family: $ffbase, sans-serif;
@@ -15,44 +15,44 @@ body{
 	-ms-overflow-style: scrollbar;
 	-webkit-tap-highlight-color: rgba($cblack, 0);
 }
-a{
+a {
 	color: $ccorp;
 	text-decoration: none;
 	outline: none;
 	background-color: transparent;
 	-webkit-text-decoration-skip: objects;
 	&:hover,
-	&:focus{
+	&:focus {
 		text-decoration: none;
 	}
-	&:hover{
+	&:hover {
 		color: $cbase;
 	}
-	&:focus{
+	&:focus {
 		color: $ccorp;
 	}
 }
 // Map
-div.map{
+div.map {
 	width: 100%;
 	height: 400px;
 }
 // Map
 // SVG Stroke ანიმაციისთვის
-svg.dashed{
+svg.dashed {
 	fill: none;
-	path{
+	path {
 		transition: all 0.4s cubic-bezier(0.7, 0, 0.3, 1);
 	}
-	&:hover{
-		path{
+	&:hover {
+		path {
 			stroke-dashoffset: 0 !important;
 		}
 	}
 }
 // SVG Stroke ანიმაციისთვის
 // Contact validation
-div.big_error{
+div.big_error {
 	margin-bottom: 10px;
 	padding: 10px 15px;
 	color: $cwhite;
@@ -62,16 +62,16 @@ div.big_error{
 }
 // Contact validation
 // Socials
-div.socials{
-	ul{
+div.socials {
+	ul {
 		@extend .no-list;
 		display: flex;
-		li{
+		li {
 			margin-right: 15px;
-			&:last-child{
+			&:last-child {
 				margin-right: 0;
 			}
-			a{
+			a {
 				@extend .flex;
 			}
 		}
@@ -79,29 +79,30 @@ div.socials{
 }
 // Socials
 // Container
-div.container{
+
+div.container {
 	display: grid;
 	grid-gap: 90px;
 	grid-template-columns: 1fr 3fr;
 	width: 1600px;
 	margin: 0 auto;
-	@media(max-width: 1680px){
+	@media (max-width: 1680px) {
 		grid-gap: 70px;
 		width: 1400px;
 	}
-	@media(max-width: 1440px){
+	@media (max-width: 1440px) {
 		grid-gap: 60px;
 		width: 1300px;
 	}
-	@media(max-width: 1366px){
+	@media (max-width: 1366px) {
 		grid-gap: 40px;
 		width: 1200px;
 	}
-	@media(max-width: 1280px){
+	@media (max-width: 1280px) {
 		grid-gap: 20px;
 		width: 992px;
 	}
-	@media(max-width: 1024px){
+	@media (max-width: 1024px) {
 		grid-gap: 0;
 		grid-template-columns: 1fr;
 		width: auto;
@@ -111,27 +112,26 @@ div.container{
 }
 // Container
 
-h2.right_section_title{
+h2.right_section_title {
 	margin-bottom: 40px;
 	color: $cwhite;
 	font-size: 52px;
 	font-weight: 500;
-	@media(max-width: 1680px){
+	@media (max-width: 1680px) {
 		margin-bottom: 30px;
 		font-size: 50px;
 	}
-	@media(max-width: 1440px){
+	@media (max-width: 1440px) {
 		margin-bottom: 25px;
 		font-size: 46px;
 	}
-	@media(max-width: 1366px){
-		
+	@media (max-width: 1366px) {
 		font-size: 40px;
 	}
-	@media(max-width: 1280px){
+	@media (max-width: 1280px) {
 		font-size: 34px;
 	}
-	@media(max-width: 1024px){
+	@media (max-width: 1024px) {
 		margin-bottom: 20px;
 	}
 }
