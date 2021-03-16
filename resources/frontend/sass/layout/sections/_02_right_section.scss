@@ -1,277 +1,294 @@
-section.right_section{
-    padding: 70px 0;
-    @media(max-width: 1680px){
-        padding: 60px 0;
-    }
-    @media(max-width: 1440px){
-        padding: 55px 0;
-    }
-    @media(max-width: 1366px){
-        padding: 50px 0;
-    }
-    @media(max-width: 1280px){
-        padding: 45px 0;
-    }
-    @media(max-width: 1024px){
-        padding: 0 0 30px 0;
-    }
-    div.content{
-        display: none;
-        div.works_listing{
-            ul{
-                @extend .no-list;
-                display: grid;
-                grid-gap: 50px;
-                grid-template-columns: repeat(3, 1fr);
-                @media(max-width: 1680px){
-                    grid-gap: 40px;
-                }
-                @media(max-width: 1440px){
-                    grid-gap: 30px;
-                }
-                @media(max-width: 1366px){
-                    grid-gap: 50px;
-                    grid-template-columns: repeat(2, 1fr);
-                }
-                @media(max-width: 1024px){
-                    grid-template-columns: repeat(2, 1fr);
-                }
-                @media(max-width: 768px){
-                    grid-template-columns: repeat(1, 1fr);
-                }
-                @media(max-width: 420px){
-                    grid-template-columns: repeat(1, 1fr);
-                }
-                li{
-                    figure{
-                        margin-bottom: 15px;
-                        border-radius: 20px;
-                        overflow: hidden;
-                        a{
-                            display: block;
-                            img{
-                                width: 100%;
-                                height: 220px;
-                                object-fit: cover;
-                            }
-                        }
-                        div.hover_block{
-                            @extend .overlay;
-                            visibility: hidden;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            z-index: 99;
-                            a{
-                                @extend .flex;
-                                display: none;
-                                padding: 10px 20px;
-                                color: $cwhite;
-                                font-size: 18px;
-                                font-weight: 700;
-                                border: 1px solid $cwhite;
-                                border-radius: 10px;
-                                &:hover{
-                                    background-color: $cpdf;
-                                    border: 1px solid $cpdf;
-                                }
-                            }
-                        }
-                        &:hover{
-                            a{
-                                img{
-                                    transform: scale(1.1);
-                                }
-                            }
-                            div.hover_block{
-                                visibility: visible;
-                                background-color: rgba($cblack, 0.7);
-                                a{
-                                    display: flex;
-                                }
-                            }
-                        }
-                    }
-                    div.work_details{
-                        h3.work_title{
-                            margin-bottom: 10px;
-                            a{
-                                color: $textColor;
-                                font-size: 20px;
-                                font-weight: 700;
-                            }
-                            &:hover{
-                                a{
-                                    color: $cpurple;
-                                }
-                            }
-                        }
-                        div.work_desc{
-                            margin-bottom: 30px;
-                            color: $textColor;
-                            font-size: 16px;
-                            font-weight: 400;
-                            line-height: 1.8;
-                        }
-                        div.visite_site{
-                            a{
-                                display: inline-block;
-                                padding-bottom: 5px;
-                                color: $cpurple;
-                                font-size: 16px;
-                                font-weight: 400;
-                                overflow: hidden;
-                                &:after{
-                                    content: '';
-                                    position: absolute;
-                                    display: block;
-                                    background-color: $cpurple;
-                                    width: 40%;
-                                    height: 2px;
-                                    bottom: 0;
-                                    left: -100%;
-                                }
-                                &:hover{
-                                    &:after{
-                                        left: 0;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        &.active{
-            display: block;
-        }
-        &.other_info{
-            div.other_info_listing{
-                display: grid;
-                grid-gap: 50px;
-                grid-template-columns: repeat(2, 1fr);
-                @media(max-width: 1680px){}
-                @media(max-width: 1440px){
-                    grid-gap: 40px;
-                }
-                @media(max-width: 1366px){}
-                @media(max-width: 1280px){
-                    grid-gap: 30px;
-                }
-                @media(max-width: 1024px){
-                    grid-gap: 15px;
-                }
-                @media(max-width: 768px){
-                    grid-template-columns: 1fr;
-                }
-                @media(max-width: 420px){}
-                div.other_info_item{
-                    h3.other_info_item_title{
-                        margin-bottom: 20px;
-                        color: $cwhite;
-                        font-size: 24px;
-                        font-weight: 700;
-                        @media(max-width: 1680px){
-                            font-size: 22px;
-                        }
-                        @media(max-width: 1024px){
-                            margin-bottom: 15px;
-                            font-size: 20px;
-                        }
-                    }
-                    ul.block_desc{
-                        @extend .no-list;
-                        display: grid;
-                        row-gap: 10px;
-                        grid-template-columns: repeat(2, 200px);
-                        @media(max-width: 1680px){}
-                        @media(max-width: 1440px){
-                            grid-template-columns: repeat(2, 180px);
-                        }
-                        @media(max-width: 1366px){}
-                        @media(max-width: 1280px){
-                            grid-template-columns: repeat(2, 150px);
-                        }
-                        @media(max-width: 1024px){
-                            grid-template-columns: repeat(2, 130px);
-                        }
-                        @media(max-width: 768px){
-                            column-gap: 40px;
-                        }
-                        @media(max-width: 420px){
-                            column-gap: 20px;
-                        }
-                        li{
-                            color: $textColor;
-                            font-size: 18px;
-                            font-weight: 400;
-                            @media(max-width: 1680px){
-                                font-size: 16px;
-                            }
-                            @media(max-width: 1024px){
-                                font-size: 14px;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        &.contact{
-            div.contact_info{
-                div.info_listing{
-                    margin-bottom: 40px;
-                    @media(max-width: 1366px){
-                        margin-bottom: 30px;
-                    }
-                    @media(max-width: 768px){
-                        margin-bottom: 20px;
-                    }
-                    div.info_item{
-                        margin-bottom: 10px;
-                        &:last-child{
-                            margin-bottom: 0;
-                        }
-                        span,
-                        a{
-                            font-size: 18px;
-                            color: $ccorp;
-                            @media(max-width: 768px){
-                                font-size: 16px;
-                            }
-                        }
-                        a{
-                            color: $textColor;
-                            &:hover{
-                                color: $cwhite;
-                            }
-                        }
-                    }
-                }
-                div.socials{
-                    ul{
-                        li{
-                            a{
-                                font-size: 30px;
-                                color: $textColor;
-                                transition: 0.2s;
-                                @media(max-width: 1680px){
-                                    font-size: 26px;
-                                }
-                                @media(max-width: 1024px){
-                                    font-size: 24px;
-                                }
-                                @media(max-width: 768px){
-                                    font-size: 22px;
-                                }
-                                &:hover{
-                                    color: $ccorp;
-                                    transition: 0.2s;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
+section.right_section {
+	padding: 70px 0;
+	@media (max-width: 1680px) {
+		padding: 60px 0;
+	}
+	@media (max-width: 1440px) {
+		padding: 55px 0;
+	}
+	@media (max-width: 1366px) {
+		padding: 50px 0;
+	}
+	@media (max-width: 1280px) {
+		padding: 45px 0;
+	}
+	@media (max-width: 1024px) {
+		padding: 0 0 30px 0;
+	}
+	div.content {
+		display: none;
+		div.works_listing {
+			ul {
+				@extend .no-list;
+				display: grid;
+				grid-gap: 50px;
+				grid-template-columns: repeat(3, 1fr);
+				@media (max-width: 1680px) {
+					grid-gap: 40px;
+				}
+				@media (max-width: 1440px) {
+					grid-gap: 30px;
+				}
+				@media (max-width: 1366px) {
+					grid-gap: 50px;
+					grid-template-columns: repeat(2, 1fr);
+				}
+				@media (max-width: 1024px) {
+					grid-template-columns: repeat(2, 1fr);
+				}
+				@media (max-width: 768px) {
+					grid-template-columns: repeat(1, 1fr);
+				}
+				@media (max-width: 420px) {
+					grid-template-columns: repeat(1, 1fr);
+				}
+				li {
+					opacity: 0;
+					transform: translateY(30px);
+					figure {
+						margin-bottom: 15px;
+						border-radius: 20px;
+						overflow: hidden;
+						a {
+							display: block;
+							img {
+								width: 100%;
+								height: 220px;
+								object-fit: cover;
+							}
+						}
+						div.hover_block {
+							@extend .overlay;
+							visibility: hidden;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							z-index: 99;
+							a {
+								@extend .flex;
+								display: none;
+								padding: 10px 20px;
+								color: $cwhite;
+								font-size: 18px;
+								font-weight: 700;
+								border: 1px solid $cwhite;
+								border-radius: 10px;
+								&:hover {
+									background-color: $cpdf;
+									border: 1px solid $cpdf;
+								}
+							}
+						}
+						&:hover {
+							a {
+								img {
+									transform: scale(1.1);
+								}
+							}
+							div.hover_block {
+								visibility: visible;
+								background-color: rgba($cblack, 0.7);
+								a {
+									display: flex;
+								}
+							}
+						}
+					}
+					div.work_details {
+						h3.work_title {
+							margin-bottom: 10px;
+							a {
+								color: $textColor;
+								font-size: 20px;
+								font-weight: 700;
+							}
+							&:hover {
+								a {
+									color: $cpurple;
+								}
+							}
+						}
+						div.work_desc {
+							margin-bottom: 30px;
+							color: $textColor;
+							font-size: 16px;
+							font-weight: 400;
+							line-height: 1.8;
+						}
+						div.visite_site {
+							a {
+								display: inline-block;
+								padding-bottom: 5px;
+								color: $cpurple;
+								font-size: 16px;
+								font-weight: 400;
+								overflow: hidden;
+								&:after {
+									content: "";
+									position: absolute;
+									display: block;
+									background-color: $cpurple;
+									width: 40%;
+									height: 2px;
+									bottom: 0;
+									left: -100%;
+								}
+								&:hover {
+									&:after {
+										left: 0;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			&.visible {
+				ul {
+					li {
+						@include transition(9, 0.2);
+						transition: 0.6s;
+						opacity: 1;
+						transform: translateY(0);
+					}
+				}
+			}
+		}
+		&.active {
+			display: block;
+		}
+		&.other_info {
+			div.other_info_listing {
+				display: grid;
+				grid-gap: 50px;
+				grid-template-columns: repeat(2, 1fr);
+				@media (max-width: 1680px) {
+				}
+				@media (max-width: 1440px) {
+					grid-gap: 40px;
+				}
+				@media (max-width: 1366px) {
+				}
+				@media (max-width: 1280px) {
+					grid-gap: 30px;
+				}
+				@media (max-width: 1024px) {
+					grid-gap: 15px;
+				}
+				@media (max-width: 768px) {
+					grid-template-columns: 1fr;
+				}
+				@media (max-width: 420px) {
+				}
+				div.other_info_item {
+					h3.other_info_item_title {
+						margin-bottom: 20px;
+						color: $cwhite;
+						font-size: 24px;
+						font-weight: 700;
+						@media (max-width: 1680px) {
+							font-size: 22px;
+						}
+						@media (max-width: 1024px) {
+							margin-bottom: 15px;
+							font-size: 20px;
+						}
+					}
+					ul.block_desc {
+						@extend .no-list;
+						display: grid;
+						row-gap: 10px;
+						grid-template-columns: repeat(2, 200px);
+						@media (max-width: 1680px) {
+						}
+						@media (max-width: 1440px) {
+							grid-template-columns: repeat(2, 180px);
+						}
+						@media (max-width: 1366px) {
+						}
+						@media (max-width: 1280px) {
+							grid-template-columns: repeat(2, 150px);
+						}
+						@media (max-width: 1024px) {
+							grid-template-columns: repeat(2, 130px);
+						}
+						@media (max-width: 768px) {
+							column-gap: 40px;
+						}
+						@media (max-width: 420px) {
+							column-gap: 20px;
+						}
+						li {
+							color: $textColor;
+							font-size: 18px;
+							font-weight: 400;
+							@media (max-width: 1680px) {
+								font-size: 16px;
+							}
+							@media (max-width: 1024px) {
+								font-size: 14px;
+							}
+						}
+					}
+				}
+			}
+		}
+		&.contact {
+			div.contact_info {
+				div.info_listing {
+					margin-bottom: 40px;
+					@media (max-width: 1366px) {
+						margin-bottom: 30px;
+					}
+					@media (max-width: 768px) {
+						margin-bottom: 20px;
+					}
+					div.info_item {
+						margin-bottom: 10px;
+						&:last-child {
+							margin-bottom: 0;
+						}
+						span,
+						a {
+							font-size: 18px;
+							color: $ccorp;
+							@media (max-width: 768px) {
+								font-size: 16px;
+							}
+						}
+						a {
+							color: $textColor;
+							&:hover {
+								color: $cwhite;
+							}
+						}
+					}
+				}
+				div.socials {
+					ul {
+						li {
+							a {
+								font-size: 30px;
+								color: $textColor;
+								transition: 0.2s;
+								@media (max-width: 1680px) {
+									font-size: 26px;
+								}
+								@media (max-width: 1024px) {
+									font-size: 24px;
+								}
+								@media (max-width: 768px) {
+									font-size: 22px;
+								}
+								&:hover {
+									color: $ccorp;
+									transition: 0.2s;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }
